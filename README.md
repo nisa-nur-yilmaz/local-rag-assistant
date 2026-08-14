@@ -27,10 +27,10 @@ Amacım, kurumsal veya kişisel PDF dokümanlarını dışarıdaki yapay zeka se
 Projeyi kendi bilgisayarınızda çalıştırmak için:
 
 1. Depoyu klonlayın:
-   ```bash
-   git clone [https://github.com/nisa-nur-yilmaz/local-rag-assistant.git](https://github.com/nisa-nur-yilmaz/local-rag-assistant.git)
-   cd local-rag-assistant
-   ```
+ ```bash
+ git clone [https://github.com/nisa-nur-yilmaz/local-rag-assistant.git](https://github.com/nisa-nur-yilmaz/local-rag-assistant.git)
+ cd local-rag-assistant
+ ```
 2.Gerekli kütüphaneleri yükleyin:
 
  ```bash
