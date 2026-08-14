@@ -11,7 +11,6 @@ def main():
     FoundryLocalManager.initialize(config)
     manager = FoundryLocalManager.instance
     
-    # Modelleri dinamik olarak listeden yakalayalım
     models = manager.catalog.list_models()
     emb_model = next((m for m in models if "qwen3-embedding" in m.id), None)
     chat_model = next((m for m in models if "Phi-3.5-mini" in m.id), None)
@@ -35,7 +34,7 @@ def main():
     conn.close()
     print(f"✅ Veritabanından {len(rows)} adet bilgi bloğu hafızaya alındı.")
     
-    # HAFIZA LİSTESİ: Eski konuşmaları burada tutacağız
+    # HAFIZA LİSTESİ:
     sohbet_gecmisi = []
     
     print("\n" + "="*50)
@@ -55,7 +54,7 @@ def main():
         if not soru.strip():
             continue
             
-        # 1. Soruya en yakın bilgi bloklarını bul (Artık en iyi 2 parçayı alıyoruz)
+        # 1. Soruya en yakın bilgi bloklarını bul ( en iyi 2 parçayı alıyoruz)
         q_vec = emb_client.generate_embedding(soru)
         q_vec = q_vec if isinstance(q_vec, list) else q_vec.data[0].embedding
         
