@@ -32,11 +32,11 @@ Projeyi kendi bilgisayarınızda çalıştırmak için:
    cd local-rag-assistant
 Gerekli kütüphaneleri yükleyin:
 
-Bash
+ ```bash
 pip install -r requirements.txt
 -Not: Sistemde Microsoft Foundry Local SDK'nın kurulu ve açık olması gerekir.
 Uygulamayı başlatın:
 
-Bash
+ ```bash
 streamlit run app.py
 Geliştirici: Nisa Nur Yılmaz
