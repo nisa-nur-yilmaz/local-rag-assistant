@@ -30,14 +30,16 @@ Projeyi kendi bilgisayarınızda çalıştırmak için:
    ```bash
    git clone [https://github.com/nisa-nur-yilmaz/local-rag-assistant.git](https://github.com/nisa-nur-yilmaz/local-rag-assistant.git)
    cd local-rag-assistant
-Gerekli kütüphaneleri yükleyin:
+   ```
+2.Gerekli kütüphaneleri yükleyin:
 
  ```bash
 pip install -r requirements.txt
 -Not: Sistemde Microsoft Foundry Local SDK'nın kurulu ve açık olması gerekir.
-
-Uygulamayı başlatın:
+```
+3.Uygulamayı başlatın:
 
  ```bash
 streamlit run app.py
+```
 Geliştirici: Nisa Nur Yılmaz
