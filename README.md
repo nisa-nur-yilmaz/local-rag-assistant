@@ -35,6 +35,7 @@ Gerekli kütüphaneleri yükleyin:
  ```bash
 pip install -r requirements.txt
 -Not: Sistemde Microsoft Foundry Local SDK'nın kurulu ve açık olması gerekir.
+
 Uygulamayı başlatın:
 
  ```bash
